@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>A simple website that displays current Date</h1>
+    <img src="https://meadowpark.iusd.org/sites/meadowpark/files/images/pages/squareimages/calendar.png" width = "200" height = "80">
+    <img src = "https://i.pinimg.com/originals/a5/93/a6/a593a6878fb3f44968c4a03fb8cef5b2.gif" width = "200" height = "80">
+    <p>Date: <span id="datetime"></span></p>
+    <p>Time: <span id="datetimes"></span></p>
+
+    <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    var dt = new Date();
+    document.getElementById("datetimes").innerHTML = dt.toLocaleTimeString();
+    </script>
+
+  </body>
+</html>
